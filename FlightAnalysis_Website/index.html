@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Flight Data Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <!-- <link href="css/creative.css"> -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                   <li>
+                        <a class="page-scroll" href="analysis.html">Analysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Data Set</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#prediction">Prediction</a>
+                    </li>
+                   <!--  <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Flight Delay Analysis</h1>
+                <hr>
+                <p>The increase in delays in the National Airspace System
+(NAS) has been the subject of several studies in recent
+years. These reports contain delay statistics over the
+entire NAS, along with some data specific to individual
+airports, however, a comprehensive characterization
+and comparison of the delay distributions is absent</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Data Set</h2>
+                    <hr class="light">
+                    <p class="text-faded" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The data is taken from Data Expo 2009 challenge which consists of flight arrival and departure details for all commercial flights within the USA, from January 2004 to April 2008. This is a large dataset: 4 gigabytes when uncompressed.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The U.S. Department of Transportation's (DOT) Bureau of Transportation Statistics (BTS) tracks the on-time performance of domestic flights operated by large air carriers. Summary information on the number of on-time, delayed, canceled and diverted flights appears in DOT's monthly Air Travel Consumer Report, published about 30 days after the month's end, as well as in summary tables posted on this website.Summary statistics and raw data are made available to the public at the time the Air Travel Consumer Report is released.<br />Reference Links:<br /><a href="https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp" style="color:white">https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp</a><br /><a href="http://stat-computing.org/dataexpo/2009/the-data.html" style="color:white">http://stat-computing.org/dataexpo/2009/the-data.html</a></p>
+                    <a href="analysis.html" class="page-scroll btn btn-default btn-xl sr-button">Analysis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prediction">
+        <div class="container" style="margin-top: -5%">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Estimate the approximate delay for your flight</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+         <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="img/delayFlight2.jpg" alt="Delay Image" style="width: 100%">
+
+                </div>
+        </div>
+        <br /><br/>
+         <div class="container">
+            <div class="row">
+                <label class="col-md-12 text-center">
+                   Dont want to waste the valuable time by waiting at the airport because your flight was delayed ? Get the approximate delay for you flight using our prdiction mechanism. Enter the flight number, day and the month you plan to travel and we will give you approximate delay in minutes
+                </label>
+            </div>
+        </div>
+        <br /><br />
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-3 text-center">
+                            <div class="form-group">
+                              <label for="flight">Flight Number:</label>
+                              <input type="text" class="form-control" id="flight">
+                            </div>
+                        </div>
+
+                          <div class="col-md-3 text-center">
+                            <div class="form-group">
+                              <label for="day">Day of the Month:</label>
+                              <input type="text" class="form-control" id="day">
+                            </div>
+                         </div>
+
+
+                         <div class="col-md-3 text-center">
+                            <div class="form-group">
+                              <label for="month">Month:</label>
+                              <input type="text" class="form-control" id="month">
+                            </div>
+                         </div>
+                         <div class="col-md-3 text-center">
+                            <div class="form-group">
+                              <label for="delay">Delay:</label>
+                              <input type="text" class="form-control" readonly="true" id="delay">
+                            </div>
+                         </div>
+                </div>
+                 <br /><br/>
+            <div class="row">
+                     <div class="col-md-3">
+                     </div>
+                     <div class="col-md-6">
+                        <button type="button" class="btn btn-primary btn-xl" id="delayButton" style="width: 100%">Predict</button>
+                     </div>
+                     <div class="col-md-3">
+                     </div>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download at Start Bootstrap!</h2>
+                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+            </div>
+        </div>
+    </aside>
+ -->
+
+
+
+    <section id="contact" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>You can find my personal details below.<br /><br/>Name: Pratik Singh<br/>Project: Advanced Database Management Systems<br />School: Northeastern University<br />NUID: 001625041</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>617-909-5388</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p ><a style="color:white;" href="mailto:singh.prati@husky.neu.edu">singh.prati@husky.neu.edu</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <script>
+            $( "#delayButton" ).click(function() {
+                
+                        var flight = $( "#flight" ).val();
+                        var day = $( "#day" ).val();
+                        var month = $( "#month" ).val();
+                        //following contains the JQuery json data
+                        var json ={
+                                      "Inputs": {
+                                        "input1": {
+                                          "ColumnNames": [
+                                            "Flight_Number",
+                                            "Month",
+                                            "DayOfTheMonth",
+                                            "Delay"
+                                          ],
+                                          "Values": [
+                                            [
+                                              flight,
+                                              month,
+                                              day,
+                                              "0"
+                                            ],
+                                            [
+                                              flight,
+                                              month,
+                                              day,
+                                              "0"
+                                            ]
+                                          ]
+                                        }
+                                      },
+                                      "GlobalParameters": {}
+                                    };
+
+                                    var f = JSON.stringify(json);
+                        //end of jason object
+                        var url = "https://ussouthcentral.services.azureml.net/workspaces/11dfe15f8e704118bce1723750eeae07/services/970b8860d70b43b3b8c620cd9c9a0fdd/execute?api-version=2.0&details=true";
+
+                        var header = {
+                            'Access-Control-Allow-Origin':'*',
+                            'Authorization':'Bearer yX/jdmmW5IoSD7WDXszjbgAl/KTlXvj44fh2JpG4N5ZKgsG1mHbcs0oRZklIjGgVcnpm/Fn6JKhzeXG9qkR40A==',
+                            'Content-Type':'application/json',
+                            'Accept':'application/json',
+                        };
+
+                        var result ;
+
+                        $.ajax({
+                                  method: 'POST',
+                                  url:url,
+                                  headers:header,
+                                  data: f,
+                                  success: function(data){
+                                    result =data.Results.output1.value.Values[0][4];
+                                    $( "#delay" ).val(result+" mins");
+                                  },
+                                  error:function(data){
+
+                                    alert("Please enter the Details");
+                                  },
+                                  dataType: 'json'
+                                });
+            });
+
+    </script>
+
+
+</body>
+
+</html>

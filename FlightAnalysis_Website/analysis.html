@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Analysis</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <!-- <link href="css/creative.css"> -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+ <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#services">Analysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#correlation">Correlation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#prediction">Prediction</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<!--The following section described the top 10 analysis-->
+   <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+            <h2 class="section-heading text-center">Top 10 Busiest Airport</h2>
+             <hr class="light">
+                <div class="row">
+                    <div class="col-md-6 text-center" style="margin-top:2%;">
+                        <h3 class="text-faded">What is the count of total flights for each airport (Top 10) in last 5 years ?</h3>
+                        <p class="text-faded" style="text-align: left;"> The bar graph shows the Top 10 busiest Airport based on along with their flight volumes for 5 years (2004-2008).This analysis can be used to compare the top 10 busiest airports in terms of Flight Count<br/>Maximum: William BHeartsfield, Atlanta<br />Count:4.17M flights<br />Minimum:Detroit Metropoliton - wayne county<br/>count:1.50M flights</p>
+
+                       <!--  <a href="analysis.html"  target="_blank" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a> -->
+                    </div>
+                     <div class="col-md-6 text-center">
+                     <a href="https://app.powerbi.com/view?r=eyJrIjoiZWE3NmEzOTgtOTYyNC00ZjI3LTk5NDMtNDYzN2U2M2IxMWZmIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9" >
+
+                       <img src="img/Top10_BusyCity_Graph.jpg" alt="Mountain View" style="width:100%;height:100%">
+                       </a>
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                     <div class="col-md-6 text-center" >
+                     <a href="https://app.powerbi.com/view?r=eyJrIjoiZWE3NmEzOTgtOTYyNC00ZjI3LTk5NDMtNDYzN2U2M2IxMWZmIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9" >
+
+                        <img src="img/Top10BusyCity_Map.jpg" alt="Mountain View" style="width:100%;height:100%">
+                    </a>
+                    </div>
+                     <div class="col-md-6 text-center" style="margin-top:5%;" >
+                       <h3 class="text-faded">Which airport is the most active airport ?</h3>
+                        <p class="text-faded" style="text-align: left;">The map shows the top 10 busiest airports with the actual lacations. The weight for the activities is represented by bubble pointing the location<br />Maximum:William BHeartsfield, Atlanta<br />Minimum:Detroit Metropoliton - wayne county</p>
+                        
+                    </div>
+                </div>
+                </div>
+
+            
+        </div>
+</section>
+
+
+<!--The following is used to show the average delay and flight count by state-->
+
+  <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Average arrival delay with total flight count for each state (2008)</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center" style="margin-top:5%;">
+                        <h3>For which state the average arrival delay is high ?</h3>
+                        <p class="text-muted" style="text-align: left;">The map shows average arrival delay for each state based on the Inbound Traffic.The darker shade shows the state with high arrival delays.<br />Maximum: New Jersey (darkest shade) with an average arrival delay of approximately 20 minutes.
+                </div>
+                <div class="col-md-6 text-center">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiNDk4ZjIxYTItMzU2Ni00ZjAyLTg3YzYtOGQ2Y2Q5MTNkOWNmIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                     <img src="img/AverageByState.jpg" alt="" style="width:100%;height:100%">
+                     </a>
+                </div>
+            </div><!--end of first row-->
+
+             <div class="row">
+                <div class="col-md-6 text-center">
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiNDk4ZjIxYTItMzU2Ni00ZjAyLTg3YzYtOGQ2Y2Q5MTNkOWNmIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                     <img src="img/TotalFlightDelayByState_Bubble.png" alt="" style="width:100%;height:100%">
+                     </a>
+                </div>
+                <div class="col-md-6 text-center" style="margin-top:7%;">
+                <h3>Which state has more number of inbound flights?</h3>
+                        <p class="text-muted" style="text-align: left;">The bubble shows the states  with the state initals in it. The size of the bubbles depends on the flight traffic (inbound) in that state. Bigger bubbles show more flight traffic<br />Maximum: CA (California) with grey bubble with maximum size <br/>Minimum: VI(Virgin Island) next to MA(blue) with least size<br/>Year:2008</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Below analysis shows the departure delay month wise -->
+    <section class="bg-primary" id="about">
+    <div class="container" style="margin-top:-5%">
+        <div class="row">
+            <h2 class="section-heading text-center">Average Departure Delay for Each Month By Year</h2>
+             <hr class="light">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <h3 class="text-faded">Which month has been the worse in terms of the flight delay for the current year ? Is it the same for the previous Year ?</h3>
+                        <p class="text-faded" style="text-align: left;">This chart shows the comparison of airline departure delay for each month in 2008 and 2007. December is the month with maximum average delay followed by June,July and August. <br /> For 2007, June has been the worst with maximm average departure delay.<br /> Probably, worst weather in december could have impacted the maximum flight departures
+
+                       </p>
+
+                       <!--  <a href="analysis.html"  target="_blank" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a> -->
+                    </div>
+                     <div class="col-md-6 text-center">
+                     <a href="https://app.powerbi.com/view?r=eyJrIjoiMzMxNmJiNmMtMmFhNC00ZDU4LTgxZjgtZTk4MDJmZjc4MzZiIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                       <img src="img/AverageDelayMonthWiseTornado.jpg" alt="Mountain View" style="width:100%;height:100%">
+                       </a>
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                     <div class="col-md-6 text-center" >
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiMzMxNmJiNmMtMmFhNC00ZDU4LTgxZjgtZTk4MDJmZjc4MzZiIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                        <img src="img/AverageDelayMothnWiseSpider.jpg" alt="Mountain View" style="width:100%;height:100%">
+                        </a>
+                    </div>
+                     <div class="col-md-6 text-center" style="margin-top:2%;" >
+                       <h3 class="text-faded"> Is there a common pattern in the Flight Departure delay ?</h3>
+                        <p class="text-faded" style="text-align: left;">A radar chart is a graphical method of displaying Average departure delay in the form of a two-dimensional chart with average delay being  quantitative variables represented on axes starting from the same point<br /> Analysis: August,June,July and Decembe shows increase in flight departure delay. <br /> Summer vacation and winter weather could be reasons impacting the flight delays</p>
+                        
+                    </div>
+                </div>
+             </div>    
+    </div>
+</section>
+
+
+<section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Distribution of Delay by Delay Type</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-md-6 text-center" style="margin-top:5%;">
+                        <h3>Pie Chart</h3>
+                        <p class="text-muted" style="text-align: left;">The map shows the total inbound flights for each state along with their average arrival delay.The darker shade shows the maximum flights and their average delay.<br />Maximum: California (darkest shade) followed by Texas<br/>Minimum: Virgin Island with Mimimum shade<br/>Year:2008</p>
+                </div>
+                <div class="col-md-6 text-center">
+                     <img src="img/DelayDistribution_Pie.jpg" alt="" style="width:100%;height:100%">
+                </div>
+            </div>-->
+
+             <div class="row">
+                <div class="col-md-6 text-center">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiMTY4YTY0YmYtMzNlNi00MDQyLWE5ZmEtMmYxZmIwY2Y5NTIxIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                     <img src="img/DelayDistribution_Comparison.jpg" alt="" style="width:100%;height:100%">
+                </a>
+                </div>
+                <div class="col-md-6 text-center" style="margin-top:5%;">
+                <h3>Which Year has been the worst causing maximum airlines to be delayed due to Weather ?</h3>
+                        <p class="text-muted" style="text-align: left;">From the graph, we can deduce that 2007 had highest number of flights delayed because of weather as compared to other years. We can also see that 2007 also had maximum Late Aircrafts. Weather could be one of the contributing factors towards late aircraft delay in year 2007</p>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-md-6 text-center" style="margin-top:5%;">
+                        <h3>What are the different types of delays impacting the flight's scheduled departure time ? </h3>
+                        <p class="text-muted" style="text-align: left;">The pyramid shows that delay distribution by delay type.The height of each layer shows that average delay by perticular type. The base represents the number of times the aircraft has been delayed because of that perticular factor (delay type)<br/> Analysis: Late Aircraft has maximum average delay in last five years hence shown with maximum height. It contributes about 35.97% of the total delay <br /> The carrier delay has the maximum base which means that maximum number of flights were impacted with this type of delay </p>
+                </div>
+                <div class="col-md-6 text-center">
+                <br /><br /><br/>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiMTY4YTY0YmYtMzNlNi00MDQyLWE5ZmEtMmYxZmIwY2Y5NTIxIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                     <img src="img/DelayDistribution_Pramid.png" alt="" style="width:100%;height:100%">
+                     </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+<!--Below analysis shows the Busiest Route-->
+<section class="bg-primary" id="about">
+    <div class="container" style="margin-top:-5%">
+        <div class="row">
+            <h2 class="section-heading text-center">Finding the Busiest route and identifying the airport connections</h2>
+             <hr class="light">
+                <div class="row">
+                     <div class="col-md-6 text-center" >
+                     <a href="https://app.powerbi.com/view?r=eyJrIjoiZWQzMjQ5OWYtMWRiYy00MjBmLThkODQtMWNiMzcyZTA2Y2YzIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                        <img src="img/BusiestRoute.jpg" alt="Mountain View" style="width:100%;height:100%">
+                        </a>
+                    </div>
+                         <div class="col-md-6 text-center" style="margin-top:1%;" >
+                           <h3 class="text-faded">Which is Busiest Route ?</h3>
+                            <p class="text-faded" style="text-align: left;">The locations on the map shows the busiest route by flight volume. This analysis can be used to understand the air traffic and congestion on this route<br/>Locations:<br/> Los Angeles International Airport<br />
+                            San Diego International-Lindberg<br />Flight Count:<br/>68359
+                            </p>
+                        </div>
+                 </div>       
+                <br/><br/>
+            
+                <div class="row">
+                    <div class="col-md-6 text-center" style="margin-top:4%;">
+                        <h3 class="text-faded">What are the possible options of flying from one destination to another ?</h3>
+                        <p class="text-faded" style="text-align:left;">The network navigator shows the connections of airports. Nodes represent the airports (by iata code) and edges represents the routes(connections).<br />This analysis can be used to identify the connection between the airports <br />Thickness of the route is depends on number of flights on that route
+                        </p>
+                    </div>
+                     <div class="col-md-6 text-center">
+                     <a href="https://app.powerbi.com/view?r=eyJrIjoiZWQzMjQ5OWYtMWRiYy00MjBmLThkODQtMWNiMzcyZTA2Y2YzIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                       <img src="img/Connections.jpg" alt="" style="width:100%;height:100%">
+                       </a>
+                    </div>
+                </div>
+             </div> 
+    </div>
+</section>
+
+
+<section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Different options (Direct Flight) to fly from Illinois to California</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                     <img src="img/MultipleRoutes.png" alt="" style="width:100%;height:70%">
+                </div>
+                <div class="col-md-12 text-center" style="margin-top:5%;">
+
+                        <h3>What are the different options (direct flight) to fly from one state to another ?</h3>
+
+                        <p class="text-muted" style="text-align: left;"> The above map shows different possibe options on a single day of the month for flying from one state to another from different airport. One can choose the convinient flight by chosing to travel to nearby airport (within Illinois ) to fly to specific destination (California).<br />There could be multiple reasons for chosing different airport to fly:<br />1.Cost<br />2.Time<br />3.Convinience<br />Above graph shows all possible flights shceduled from nearby airports within illinois to callifornia for one specific day of the month</p>
+                </div>
+            </div><!--end of first row-->
+        </div>
+    </section>
+
+
+    <!--Older aircraft comparison-->
+<section class="bg-primary" id="correlation">
+    <div class="container" style="margin-top:-5%">
+        <div class="row">
+            <h2 class="section-heading text-center">Are older Aircraft prone to more delays then the Newer Aircraft ?</h2>
+             <hr class="light">
+                <div class="row">
+                         <div class="col-md-12 text-center" style="margin-top:1%;" >
+                           <h3 class="text-faded"></h3>
+                            <p class="text-faded" style="text-align: left;">Following analysis uses <span style="color:white;">Pearson Correlation</span> to identify the relation between the aircraft's manufacturing year and the flight delays.
+                            </p>
+                            <p class="text-faded" style="text-align: left;">
+                            Pearson Correlation coefficient is the measure of linear correlation between two variables X and Y where X is the Year of manufacture and Y is the Average delay for all the aircrafts manufactured in that Year. <br /> First Map Reduce job reads each line of the record and uses the distributed cache to get the year of manufature for the flights by Tail Number and calculates the average of delays for all the flights manufatcured in that year. Second job takes the input from the first job and Calculates the Pearson Correlation coefficient.
+                            </p>
+
+                            <img src="img/PearsonCorrelation.jpg" style="width:100%"/>
+                            <br />
+                            <br />
+                            <p class="text-faded" style="text-align: left;">The relationship between two factors is identified by following :<br /> 0.1 < |r| < 0.3 => small correlation<br />0.3 < |r| < 0.5 => Moderate correlation<br /> |r| > 0.5 => strong correlation</p>
+
+                            <br />
+                            <br />
+                            <h2 class="text-faded" style="text-align: left;">Conclusion :</h2>
+                            <p class="text-faded" style="text-align: left;">
+                               
+                                The result obtained for finding the relation between the Year of manufacture for a perticular flight and the Average delay for all the Aircraft manufactured in that year is 0.2896. <br />With this result, we can deduce that the Older or Newer aircrafts do not have much relation with Flight delays.
+                            </p>
+
+                        </div>
+                 </div>       
+                <br/><br/>
+             </div> 
+    </div>
+</section>
+
+
+<section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Carrier Popularity</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="row">
+                <div class="col-md-6 text-center">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiNWNhMzdlNGYtZGVhNy00ZDBhLWIwM2QtZGRlM2E1NmNlZjhmIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                     <img src="img/AirlineGrowth_SW.jpg" alt="" style="width:100%;height:100%">
+                     </a>
+                </div>
+                <div class="col-md-6 text-center" style="margin-top:2%;">
+                <h3>Which is the most preffered airline ?</h3>
+                        <p class="text-muted" style="text-align: left;">The line graph shows the comparison of 5 different airlines in each year. With the help of this graph, we can deduce that Southwest is the most preferred airline in all 5 years (2004-2008). In 2008, the number of scheduled flights has gone upto 1.20 M which is quite high when compared to other four airlines.<br />
+                        It clearly states that southwest has been leading the airlines industry since 2004. It also shows that south west has shown continuos increase throught out</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 text-center" style="margin-top:5%;">
+                        <h3>Which carrier is most popular in year ?</h3>
+                        <p class="text-muted" style="text-align: left;">From the line graph, we can see that southwest is the most popular airline in all five year. <br />American airline shows a continuos decrease in its scheduled flights over the years.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                 <a href="https://app.powerbi.com/view?r=eyJrIjoiNWNhMzdlNGYtZGVhNy00ZDBhLWIwM2QtZGRlM2E1NmNlZjhmIiwidCI6IjZhYmZjNzNmLWRhNjQtNDEzNy05ZjlmLTE1ZmFhZTU2ZjY4NSIsImMiOjN9">
+                     <img src="img/AirlineGrowth_CPop.jpg" alt="" style="width:100%;height:100%">
+                     </a>
+                </div>
+            </div><!--end of first row-->
+
+         
+        </div>
+    </section>
+    <section class="bg-primary" id="prediction">
+    <div class="container" style="margin-top:-5%">
+
+
+        <div class="row">
+            <h2 class="section-heading text-center">Finding the approximate delay for a perticular flight</h2>
+             <hr class="light">
+                 <div class="row">
+                 <div class="col-md-3">
+                 </div>
+                    <div class="col-md-12 text-center" style="margin-top:1%;" >
+
+                            <p class="text-faded" style="text-align: left;"> With the help of this prediction, we can determine the approximate delay for a perticular flight.The prediction is performed by using the data set which has been produced by a map reduce job.Following factors have been taken into consideration for prediction:<br />1. Flight Number<br />2. Day of the month<br />3. Month<br />4. Delay for that flight on that perticular day
+                            </p>
+                    </div>
+                         <div class="col-md-3">
+                        </div>
+                 </div> 
+                 <div class="row">
+                    <div class="col-md-12">
+                         <h2 class="text-faded" style="text-align: left;">Prediction Model:</h2>
+                    </div>
+                 </div>
+                     <div class="row">
+                        <div class="col-md-6 text-center" >
+                            <img src="img/predictionModel.png" alt="Mountain View" style="width:100%;height:100%">
+                        </div>
+                        <div class="col-md-6 text-center"  style="margin-top:10%;">
+                            <p class="text-faded" style="text-align: left;"> Training Data: 75% of whole<br />Testing Data: 25% of whole<br />Regression Technique: Linear Regression<br /><br />Linear Regression is an approach for modeling the relationship between a scalar dependent variable Y which is Average Delay and one or more explanatory variables (Flight Number, Day of the Month, Month) denoted X.</p>
+                             <a href="index.html#prediction" class="btn btn-default btn-xl sr-button">Predict Delay</a>
+                        </div>  
+                    </div>
+                <br/><br/>
+             </div> 
+    </div>
+</section>
+
+       <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+</html>
